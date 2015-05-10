@@ -44,6 +44,21 @@ func MakeFilteredChan(ch chan int, f func(int) bool) chan int {
 	return out
 }
 
+func Take(n int, ch chan int) []int {
+	items := make([]int, n)
+	idx := 0
+
+	for item := range ch {
+		items[idx] = item
+
+		idx++
+		if idx >= n {
+			break
+		}
+	}
+	return items
+}
+
 func GenFib() chan int {
 	ch := make(chan int, 1)
 	f1 := 0
