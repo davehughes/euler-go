@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/davehughes/euler-go/problem12"
+	"github.com/davehughes/euler-go/problem13"
 )
 
 func main() {
@@ -17,5 +17,6 @@ func main() {
 	// fmt.Printf("[8] %d\n", problem8.Run())
 	// fmt.Printf("[10] %d\n", problem10.Run())
 	// fmt.Printf("[11] %d\n", problem11.Run())
-	fmt.Printf("[12] %d\n", problem12.Run())
+	// fmt.Printf("[12] %d\n", problem12.Run())
+	fmt.Printf("[13] %d\n", problem13.Run())
 }
