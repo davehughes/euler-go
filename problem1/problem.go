@@ -2,15 +2,6 @@ package problem1
 
 import "github.com/davehughes/euler-go/util"
 
-func divisibleByAll(i int, divs []int) bool {
-	for _, item := range divs {
-		if i%item != 0 {
-			return false
-		}
-	}
-	return true
-}
-
 func divisibleByAny(i int, divs []int) bool {
 	for _, item := range divs {
 		if i%item == 0 {
